@@ -20,14 +20,24 @@ products:
     cve_fixes: []
   apache-log4j2:
     name: "Apache Log4j2"
-    version: "2.16.0"            # DUMMY
+    version: "2.17.0"            # DUMMY
     patches: []
-    cve_fixes: []
+    cve_fixes:
+      - CVE-2021-45105
+    updated:
+      by: aegis-delivery
+      artifact: 20261111-202556-1c70d2
+      at: '2026-11-11T20:25:58+00:00'
   apache-commons-fileupload:
     name: "Apache Commons FileUpload"
-    version: "1.2.1"             # DUMMY
+    version: "1.3.3"             # DUMMY
     patches: []
-    cve_fixes: []
+    cve_fixes:
+      - CVE-2016-1000031
+    updated:
+      by: aegis-delivery
+      artifact: 20261111-202556-1c70d2
+      at: '2026-11-11T20:25:58+00:00'
   bind-9:
     name: "BIND 9"
     version: "7.2.5.200"         # fileset bos.net.tcp.bind
@@ -35,9 +45,14 @@ products:
     cve_fixes: []
   eclipse-omr:
     name: "Eclipse OMR"
-    version: "unknown"           # ships inside the OpenJ9 runtimes
+    version: "17.0.20.0"         # ships inside the OpenJ9 runtimes
     patches: []
-    cve_fixes: []
+    cve_fixes:
+      - CVE-2026-16243
+    updated:
+      by: aegis-delivery
+      artifact: 20261111-202556-1c70d2
+      at: '2026-11-11T20:25:58+00:00'
   eclipse-openj9:
     name: "Eclipse OpenJ9"
     version: "8.0.0.820"         # fileset Java8_64.jre
@@ -106,8 +121,14 @@ products:
   sqlite:
     name: "SQLite"
     version: "3.28.0-1"          # DUMMY
-    patches: []
-    cve_fixes: []
+    patches:
+      - rpm_fix3/rpm_41511016.tar
+    cve_fixes:
+      - CVE-2025-29088
+    updated:
+      by: aegis-delivery
+      artifact: 20261111-202556-1c70d2
+      at: '2026-11-11T20:25:58+00:00'
   x-org-x-server:
     name: "X.Org X server"
     version: "unknown"           # AIX X11 is fileset X11.base.rte, not collected
