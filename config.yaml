@@ -1,0 +1,120 @@
+# Middleware configuration: Tibco_Middleware
+# Product versions deployed on this middleware's servers. Aegis updates only a product's
+# version, patches, cve_fixes and updated keys; everything else is kept as written.
+# SAMPLE: versions marked DUMMY are made-up test values, the rest are from tibmw01.
+middleware: "Tibco_Middleware"
+platforms:
+  - "IBM AIX 7.2.5"
+servers:
+  - "tibmw01"
+products:
+  apache-http-server:
+    name: "Apache HTTP Server"
+    version: "2.4.58-1"          # DUMMY (AIX Toolbox httpd)
+    patches: []
+    cve_fixes: []
+  apache-tomcat:
+    name: "Apache Tomcat"
+    version: "7.0.29"            # DUMMY (under TIBCO Administrator 5.11)
+    patches: []
+    cve_fixes: []
+  apache-log4j2:
+    name: "Apache Log4j2"
+    version: "2.16.0"            # DUMMY
+    patches: []
+    cve_fixes: []
+  apache-commons-fileupload:
+    name: "Apache Commons FileUpload"
+    version: "1.2.1"             # DUMMY
+    patches: []
+    cve_fixes: []
+  bind-9:
+    name: "BIND 9"
+    version: "7.2.5.200"         # fileset bos.net.tcp.bind
+    patches: []
+    cve_fixes: []
+  eclipse-omr:
+    name: "Eclipse OMR"
+    version: "unknown"           # ships inside the OpenJ9 runtimes
+    patches: []
+    cve_fixes: []
+  eclipse-openj9:
+    name: "Eclipse OpenJ9"
+    version: "8.0.0.820"         # fileset Java8_64.jre
+    patches: []
+    cve_fixes: []
+  gconf:
+    name: "GConf"
+    version: "2.32.4-1"          # DUMMY
+    patches: []
+    cve_fixes: []
+  gnu-gzip:
+    name: "GNU gzip"
+    version: "1.12-1"            # DUMMY
+    patches: []
+    cve_fixes: []
+  gnu-patch:
+    name: "GNU patch"
+    version: "2.7.6-1"           # DUMMY
+    patches: []
+    cve_fixes: []
+  ibm-aix:
+    name: "IBM AIX"
+    version: "7.2.5.200"         # oslevel 7200-05-07-2346
+    patches: []
+    cve_fixes: []
+  ibm-sdk-java-technology-edition:
+    name: "IBM SDK, Java Technology Edition"
+    version: "8.0.0.820"         # fileset Java8_64.sdk
+    patches: []
+    cve_fixes: []
+  ibm-websphere-mq-jms:
+    name: "IBM Websphere MQ JMS"
+    version: "8.0.0.3"           # DUMMY
+    patches: []
+    cve_fixes: []
+  openssh:
+    name: "OpenSSH"
+    version: "9.7.3013.1000"     # DUMMY
+    patches: []
+    cve_fixes: []
+  openssl:
+    name: "OpenSSL"
+    version: "3.0.13.1000"       # fileset openssl.base
+    patches: []
+    cve_fixes: []
+  oracle-java-se:
+    name: "Oracle Java SE"
+    version: "unknown"           # Oracle ships no Java for AIX
+    patches: []
+    cve_fixes: []
+  perl:
+    name: "Perl"
+    version: "5.30.3.0"          # fileset perl.rte
+    patches: []
+    cve_fixes: []
+  postgresql:
+    name: "PostgreSQL"
+    version: "13.4-1"            # DUMMY
+    patches: []
+    cve_fixes: []
+  python:
+    name: "Python"
+    version: "3.9.19-1"          # DUMMY
+    patches: []
+    cve_fixes: []
+  sqlite:
+    name: "SQLite"
+    version: "3.28.0-1"          # DUMMY
+    patches: []
+    cve_fixes: []
+  x-org-x-server:
+    name: "X.Org X server"
+    version: "unknown"           # AIX X11 is fileset X11.base.rte, not collected
+    patches: []
+    cve_fixes: []
+  zlib:
+    name: "zlib"
+    version: "1.2.13-1"          # AIX Toolbox zlib
+    patches: []
+    cve_fixes: []
