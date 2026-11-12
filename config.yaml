@@ -139,3 +139,13 @@ products:
     version: "1.2.13-1"          # AIX Toolbox zlib
     patches: []
     cve_fixes: []
+  libxml2:
+    name: libxml2
+    version: 2.9.7-21.el8_10.9
+    patches: []
+    cve_fixes:
+      - CVE-2026-86144
+    updated:
+      by: aegis-delivery
+      artifact: 20261112-165521-f00640
+      at: '2026-11-12T16:55:22+00:00'
